@@ -1,0 +1,37 @@
+{
+    "chains_path":"/Users/pablopz/Datasets/CHAINS_Dataset/data/whsp/",
+    "qut_path":"/Users/pablopz/Datasets/QUT-NOISE/QUT-NOISE/",
+
+    "snr_values":[10,5,0],
+    "utt_per_snr":80,
+    "min_silence_interval":2,
+    "max_silence_interval":4,
+    "min_noise_interval":3,
+    "max_noise_interval":8,
+    "test_speakers":["frf04", "irf10", "irf11", "irf12", "frm04","irm13", "irm14", "irm15", "irm16"],
+
+    "audio_dataset_path":"./Dataset",
+
+    "asmr_path":"./Youtube-DL/",
+    "wad_model":"./Checkpoints/LSTM_64_LongDS.pt",
+    "cwad_model":"./Checkpoints/LSTM_64_LongDS_FineTune.pt",
+    "scaler":"./Checkpoints/LSTM_Scaler.sav",
+
+    "num_rasta":19,
+    "sequence_length":30,
+    "target_sr":16000,
+    "train_val_ratio":0.8,
+
+    "num_lstm_layers":2,
+    "layer_size":64,
+    "out_layer_size":1,
+    "bidirectional":0,
+    "train_batch_size":256,
+    "train_epochs":8,
+
+    "noise_augment_path":"./Youtube-DL/Samples/**/*Noise.wav",
+    "audio_augment_path":"./Data_aug/",
+    "utt_per_snr_aug":50,
+
+    "tune_epochs":8
+}
